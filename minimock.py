@@ -80,12 +80,12 @@ def lookup_by_name(name, nsdicts):
     of the object that completes the name.
 
         >>> import os
-        >>> nsdict, obj_name, attrs = lookup_by_name("os.path.isdir",
+        >>> nsdict, obj_name, attrs = lookup_by_name("os.path.basename",
         ...     (locals(),))
         >>> obj_name, attrs
-        ('os', ['path', 'isdir'])
+        ('os', ['path', 'basename'])
         >>> getattr(getattr(nsdict[obj_name], attrs[0]), attrs[1])  # doctest: +ELLIPSIS
-        <function isdir at ...>
+        <function basename at ...>
         >>> lookup_by_name("os.monkey", (locals(),))
         Traceback (most recent call last):
           ...
