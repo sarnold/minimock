@@ -48,7 +48,7 @@ import textwrap
 
 try:
     import builtins
-except ImportError:
+except ImportError:  # pragma: PY2
     # python < 3
     import __builtin__ as builtins
     try:
@@ -58,12 +58,7 @@ except ImportError:
 else:
     # python 3
     from io import StringIO
-try:
-    next
-except NameError:
-    # python < 2.6
-    def next(x):
-        return x.next()
+
 
 # A list of mocked objects. Each item is a tuple of (original object,
 # namespace dict, object name, and a list of object attributes).
@@ -369,7 +364,7 @@ class TraceTracker(Printer):
             False
         """
         return self.checker.check_output(want, self.dump(),
-            optionflags=self.options)
+                                         optionflags=self.options)
 
     def diff(self, want):
         r"""
@@ -398,7 +393,8 @@ class TraceTracker(Printer):
             return ''
         else:
             return self.checker.output_difference(doctest.Example("", want),
-                self.dump(), optionflags=self.options)
+                                                  self.dump(),
+                                                  optionflags=self.options)
 
     def dump(self):
         r"""
@@ -464,7 +460,7 @@ def normalize_function_parameters(text):
         re.compile(r"\(\s+(\S)"): r"(\1",
         re.compile(r"(\S)\s+\)"): r"\1)",
         re.compile(r",\s*(\S)"): r", \1",
-        }
+    }
     for search_pattern, replace_pattern in normalize_map.items():
         normalized_text = re.sub(
             search_pattern, replace_pattern, normalized_text)
@@ -498,6 +494,8 @@ class MinimockOutputChecker(doctest.OutputChecker, object):
 class _DefaultTracker(object):
     def __repr__(self):
         return '(default tracker)'
+
+
 DefaultTracker = _DefaultTracker()
 del _DefaultTracker
 
@@ -551,8 +549,8 @@ class Mock(object):
             else:
                 new_name = attr
             self.mock_attrs[attr] = Mock(new_name,
-                show_attrs=self.mock_show_attrs,
-                tracker=self.mock_tracker)
+                                         show_attrs=self.mock_show_attrs,
+                                         tracker=self.mock_tracker)
         return self.mock_attrs[attr]
 
     def __setattr__(self, attr, value):
@@ -571,6 +569,7 @@ class Mock(object):
             if self.mock_show_attrs and self.mock_tracker is not None:
                 self.mock_tracker.set(self.mock_name, attr, value)
             self.mock_attrs[attr] = value
+
 
 __test__ = {
     "Mock":
