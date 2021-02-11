@@ -1,7 +1,8 @@
+{% set name = "MiniMock" %}
 {% set version = "1.2.8" %}
 
 package:
-  name: MiniMock
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
@@ -23,17 +24,18 @@ requirements:
 
 test:
   imports:
-    - {{ name }}
+    - {{ name|lower }}
   requires:
     - pip
   commands:
-    - pip check
-    - {{ PYTHON }} -m doctest minimock.py
+    - python -m pip check
+    - python -m doctest minimock.py
 
 about:
   home: https://github.com/lowks/minimock
   license: MIT
-  license_file: LICENSE.txt
+  license_family: MIT
+  license_file: ../LICENSE.txt
   summary: The simplest possible mock library
 
 extra:
