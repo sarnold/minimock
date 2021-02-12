@@ -8,7 +8,6 @@ on:
 
 jobs:
   create_release:
-    needs: [cibw_wheels]
     runs-on: ubuntu-20.04
 
     steps:
