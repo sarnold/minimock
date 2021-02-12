@@ -147,12 +147,12 @@ To restore all the objects mocked with ``mock()``, use
 track of).
 
 
-.. |ci| image:: https://github.com/sarnold/minimock/workflows/ci/badge.svg
-    :target: https://github.com/sarnold/minimock/actions?query=workflow:ci
+.. |ci| image:: https://github.com/sarnold/minimock/workflows/Smoke/badge.svg
+    :target: https://github.com/sarnold/minimock/actions?query=workflow:Smoke
     :alt: CI Status
 
-.. |conda| image:: https://github.com/sarnold/minimock/workflows/conda/badge.svg
-    :target: https://github.com/sarnold/minimock/actions?query=workflow:conda
+.. |conda| image:: https://github.com/sarnold/minimock/workflows/Conda/badge.svg
+    :target: https://github.com/sarnold/minimock/actions?query=workflow:Conda
     :alt: Conda Status
 
 .. |climate| image:: https://img.shields.io/codeclimate/maintainability/sarnold/minimock
