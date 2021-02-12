@@ -1,8 +1,8 @@
 MiniMock
 ========
-|ci| |conda| |release| |license|
+|ci| |conda| |release| |python|
 
-|tag| |python| |climate| |reqs|
+|tag| |cov| |license| |climate| |reqs|
 
 ..  contents::
     :depth: 1
@@ -170,6 +170,10 @@ track of).
 .. |tag| image:: https://img.shields.io/github/v/tag/sarnold/minimock?color=green&include_prereleases&label=latest%20release
     :target: https://github.com/sarnold/minimock/releases
     :alt: GitHub tag (latest SemVer, including pre-release)
+
+.. |cov| image:: https://img.shields.io/codecov/c/github/sarnold/minimock
+    :target: https://codecov.io/gh/sarnold/minimock
+    :alt: Codecov
 
 .. |python| image:: https://img.shields.io/badge/python-3.6+-blue.svg
     :target: https://www.python.org/downloads/

@@ -44,9 +44,10 @@ jobs:
       env:
         PLATFORM: ${{ matrix.os }}
 
-    - name: Run tests with pytest/coverage
-      run: |
-        tox -e dev
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        env_vars: OS,PYTHON
 
     - name: Build sdist/wheel
       run: |
