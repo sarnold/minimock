@@ -40,6 +40,8 @@ implementation is simple because most of the work is done by doctest.
 
 __all__ = ("mock", "restore", "Mock", "TraceTracker", "assert_same_trace")
 
+__version__ = '1.2.9'
+
 import sys
 import inspect
 import doctest
