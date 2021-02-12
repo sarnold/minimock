@@ -1,8 +1,8 @@
 MiniMock
 ========
-|ci| |conda| |python| |license|
+|ci| |conda| |release| |license|
 
-|tag| |climate| |reqs|
+|tag| |python| |climate| |reqs|
 
 ..  contents::
     :depth: 1
@@ -11,12 +11,12 @@ MiniMock
 License & Collaboration
 -----------------------
 
-MiniMock is by `Ian Bicking <http://ianbicking.org>`_ with
+MiniMock is originall by `Ian Bicking <http://ianbicking.org>`_ with
 substantial contributions by Mike Beachy, and is maintained by
 Low Kian Seong. It is licensed under an `MIT-style license
-<https://github.com/lowks/minimock/blob/master/LICENSE.txt>`_.
+<https://github.com/sarnold/minimock/blob/master/LICENSE.txt>`_.
 
-It has a `github repository <https://github.com/lowks/minimock/>`_
+It has a `github repository <https://github.com/sarnold/minimock/>`_
 which you can clone with ``git clone https://github.com/lowks/minimock.git``.
 There is also a `Google Group <https://groups.google.com/group/minimock-dev>`_
 for the development mailing list which can be emailed at
@@ -154,6 +154,10 @@ track of).
 .. |conda| image:: https://github.com/sarnold/minimock/workflows/Conda/badge.svg
     :target: https://github.com/sarnold/minimock/actions?query=workflow:Conda
     :alt: Conda Status
+
+.. |release| image:: https://github.com/sarnold/minimock/workflows/Release/badge.svg
+    :target: https://github.com/sarnold/minimock/actions?query=workflow:Release
+    :alt: Release Status
 
 .. |climate| image:: https://img.shields.io/codeclimate/maintainability/sarnold/minimock
     :target: https://codeclimate.com/github/sarnold/minimock

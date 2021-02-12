@@ -1,6 +1,6 @@
 from setuptools import setup
 
-version = '1.2.9.dev0'
+version = '1.2.9'
 
 try:
     from os.path import join, dirname
