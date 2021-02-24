@@ -171,15 +171,15 @@ track of).
     :target: https://github.com/lowks/minimock/releases
     :alt: GitHub tag (latest SemVer, including pre-release)
 
-.. |cov| image:: https://img.shields.io/codecov/c/github/lowks/minimock
-    :target: https://codecov.io/gh/lowks/minimock
+.. |cov| image:: https://img.shields.io/codecov/c/github/sarnold/minimock
+    :target: https://codecov.io/gh/sarnold/minimock
     :alt: Codecov
 
 .. |python| image:: https://img.shields.io/badge/python-3.6+-blue.svg
     :target: https://www.python.org/downloads/
     :alt: Python
 
-.. |reqs| image:: https://requires.io/github/lowks/minimock/requirements.svg?branch=master
-    :target: https://requires.io/github/lowks/minimock/requirements/?branch=master
+.. |reqs| image:: https://requires.io/github/sarnold/minimock/requirements.svg?branch=master
+    :target: https://requires.io/github/sarnold/minimock/requirements/?branch=master
     :alt: Requirements Status
 
